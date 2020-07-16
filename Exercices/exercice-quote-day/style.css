@@ -1,3 +1,153 @@
-body{
-  width: auto;
+body {
+  background-color: green;
+  width: 90%;
+  height: 98vh;
+}
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+}
+
+h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: oblique;
+}
+h4 {
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+div {
+  display: flex;
+}
+
+.cercleAnnonce {
+  display: flex;
+  justify-content: center;
+  background-color: red;
+  color: white;
+  font-style: italic;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  text-align: center;
+  position: relative;
+  left: 40px;
+  top: 40px;
+  animation-name: cercleCitation;
+  animation-duration: 8s;
+}
+
+@keyframes cercleCitation {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: orange;
+  }
+}
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: cercleCitation;
+  animation-duration: 4s;
+}
+
+.cercleCitation {
+  display: flex;
+  justify-content: center;
+  background-color: yellow;
+  color: black;
+  width: 350px;
+  height: 300px;
+  border-radius: 100%;
+  position: relative;
+  left: 550px;
+}
+.cercleCitation:hover {
+  transform: scaleX(2);
+  background-color: orangered;
+}
+.cercleCitation {
+  transition: background-color 5s, transform 10s;
+}
+@keyframes move-right {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(500px);
+  }
+}
+.cercleCitation {
+  animation-name: move-right;
+  animation-duration: 30s;
+}
+
+.cercleAuteur {
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  position: relative;
+  left: 1250px;
+  bottom: 40px;
+}
+
+.cercleAuteur:hover {
+  background-color: greenyellow;
+
+  transform: scale(2);
+}
+.cercleAuteur {
+  transition: background-color 10s, transform 5s;
+}
+
+.droit {
+  color: white;
+  font-style: italic;
+  font-weight: bolder;
+  font-size: xx-large;
+}
+.quotes {
+  color: black;
+}
+#author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#quotes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: small;
+  font-style: italic;
+}
+.circleAlert {
+  display: flex;
+  justify-content: center;
+  background-color: burlywood;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  position: relative;
+  left: 400px;
 }
